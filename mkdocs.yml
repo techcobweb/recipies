@@ -1,0 +1,9 @@
+site_name: Recipies
+nav:
+    - Starters: starters/index.md
+    - Cakes and biscuits: cakes-biscuits/index.md
+# theme: readthedocs
+# theme: bootstrap
+plugins:
+    - search
+    - mkpdfs
