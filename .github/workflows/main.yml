@@ -25,12 +25,12 @@ jobs:
 
     - name: Build and push
       run: |
-        git config user.name ${{ secrets.GH_USER }}
-        git config user.email "${{ secrets.GH_MAIL }}"
-        git remote add gh-token "https://${{ secrets.GH_TOKEN}}@github.com/:user/:repo.git"
-        git fetch gh-token && git fetch gh-token gh-pages:gh-pages
+        /usr/bin/git config user.name ${{ secrets.GH_USER }}
+        /usr/bin/git config user.email "${{ secrets.GH_MAIL }}"
+        /usr/bin/git remote add gh-token "https://${{ secrets.GH_TOKEN}}@github.com/:user/:repo.git"
+        /usr/bin/git fetch gh-token && git fetch gh-token gh-pages:gh-pages
         python -m mkdocs gh-deploy -v --clean --remote-name gh-token
-        git push gh-token gh-pages
+        /usr/bin/git push gh-token gh-pages
 
 
         
