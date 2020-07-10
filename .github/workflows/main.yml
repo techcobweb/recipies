@@ -6,16 +6,7 @@ on:
   #   branches: 
   #     - master
 
-jobs: 
-  build: 
-    name: Build and Deploy Documentation 
-    runs-on: ubuntu-latest 
-    steps: 
-      - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            #CUSTOM_DOMAIN: optionaldomain.com
+
       # - name: Checkout Master 
       #   uses: actions/checkout@v2 
       # - name: Set up Python 3.7 
