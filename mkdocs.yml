@@ -6,4 +6,4 @@ nav:
 # theme: bootstrap
 plugins:
     - search
-    - mkpdfs
+    # - mkpdfs
