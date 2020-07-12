@@ -25,7 +25,8 @@ jobs:
 
     - name: Build and push
       run: |
-        mkdocs gh-deploy
+        mkdocs gh-pages --force
+
 
         
 
